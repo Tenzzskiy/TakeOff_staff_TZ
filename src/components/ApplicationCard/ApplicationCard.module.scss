@@ -1,0 +1,91 @@
+.card{
+  width: 100%;
+  height: 170px;
+  padding: 0 15px;
+  border-radius: 20px;
+  color: white;
+
+  .content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  padding: 10px;
+    border-radius: 10px;
+    background: #337ebd;
+   width: 100%;
+    height: 100%;
+    .desc{
+      .update{
+        position: absolute;
+        bottom: 0;
+        width: 22px;
+        cursor: pointer;
+        right: 0;
+      }
+      .exit{
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      width: 100%;
+      position: relative;
+      height: 100%;
+      margin: 0 0 10px 10px;
+      .updateFlex{
+        display: flex;
+        flex-direction: row;
+
+        max-width: 50%;
+        .accessButton{
+          margin-left: 30px;
+          max-height: 50px;
+        }
+        button{
+          width: 200px;
+          height: 50px;
+          border:0;
+          outline: none;
+          text-decoration: none;
+          color: white;
+          background: darkorchid;
+          transition: all 0.3s;
+          cursor: pointer;
+          &:hover{
+        border: 1px solid #4ceff5;
+            color: #4ceff5;
+            transition: all 0.3s;
+          }
+        }
+      }
+      .inputFlex{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+      }
+      input{
+        max-width:300px;
+        margin-bottom: 10px;
+        min-height: 30px;
+      }
+      p{
+        margin:  5px 0;
+
+      }
+    h1{
+      font-size: 18px;
+      margin: 0 0 5px 0 ;
+    }
+    }
+    .img{
+      min-width: 100px;
+      height: 100%;
+      img{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+      }
+    }
+  }
+}

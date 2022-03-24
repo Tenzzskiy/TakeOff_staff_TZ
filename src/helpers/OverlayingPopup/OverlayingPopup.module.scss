@@ -1,0 +1,73 @@
+.container {
+  position: fixed;
+  z-index: 7;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  //height: 100vh;
+  //width: 100vw;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.opened {
+  pointer-events: all;
+}
+
+.childrenWrapper {
+  z-index: 2;
+  position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // overflow: auto;
+
+  max-height: 100vh;
+  // bottom: 0;
+  // transform: translate(-50%, -50%);
+
+  &Bottom {
+    top: auto;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    // transform: translate(-50%, 0);
+  }
+
+  //@include desktop {
+  //  &Left {
+  //    top: auto;
+  //    right: 0;
+  //    bottom: 0;
+  //    display: flex;
+  //    justify-content: flex-end;
+  //  }
+  //}
+}
+
+// .closeButton {
+//   z-index: 1111;
+//   position: absolute;
+//   top: 5px;
+//   right: 5px;
+//   width: 30px;
+//   height: 30px;
+//   padding: 0;
+//   margin: 0;
+//   border: none;
+//   background-color: $white-color;
+//   border-radius: 25%;
+
+//   @include tablet {
+//     top: 0;
+//     right: 0;
+//     width: 50px;
+//     height: 50px;
+//   }
+// }
+
+// .closeIcon {
+//   path {
+//     stroke: #000;
+//   }
+// }
