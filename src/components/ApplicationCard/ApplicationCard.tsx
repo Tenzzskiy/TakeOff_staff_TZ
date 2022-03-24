@@ -12,7 +12,8 @@ import {FormInput} from "../FormInput";
 const ApplicationCard = ({Users}:ApplicationCardProps) => {
     const dispatch = useDispatch();
     const [update,setUpdate] = useState(false);
-    const [data,setData] = useState({name:"",website:"",company:"",id:Users.id})
+    const [data,setData] = useState({name:Users.name,website:Users.website,company:Users.company,id:Users.id})
+    console.log(Users)
   const handleDelete = () =>{
         dispatch(DeleteUser(Users))
     }
@@ -52,9 +53,9 @@ const ApplicationCard = ({Users}:ApplicationCardProps) => {
                     </> :
                        <div className={styles.updateFlex}>
                           <div className={styles.inputFlex}>
-                              <FormInput onChange={handleChange} placeholder='Name' name='name' />
-                              <FormInput onChange={handleChange} placeholder='Website' name='website'/>
-                              <FormInput onChange={handleChange} placeholder='Company' name='company'/>
+                              <FormInput onChange={handleChange} placeholder='Name' name='name' value={data.name} />
+                              <FormInput onChange={handleChange} placeholder='Website' name='website' value={data.website}/>
+                              <FormInput onChange={handleChange} placeholder='Company' name='company' value={data.company}/>
                           </div>
                            <div className={styles.accessButton} onClick={() =>{
                                handleAccessUpdate();

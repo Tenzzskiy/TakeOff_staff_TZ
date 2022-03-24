@@ -44,10 +44,12 @@
     width: 100%
 }
 .button{
+
     cursor: pointer;
     height: 40px;
     min-width: 300px;
-    margin: 0 auto;
+    margin: 10px auto;
+    border-radius: 10px;
     width: 100%;
     border: 0;
     outline: none;

@@ -5,7 +5,7 @@ export interface card {
     street?:string;
     suite?:string;
     zipcode?:string;
-    company?:object;
+    company:string;
     email?:string;
     id?:number;
     name?:string;

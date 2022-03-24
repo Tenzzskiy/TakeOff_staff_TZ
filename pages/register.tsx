@@ -22,7 +22,7 @@ const Register = () => {
                 <h1 className={styles.title}>Sign Up</h1>
                 <div className={styles.flex}>
                     <FormInput className={styles.input} onChange={handleChange} placeholder='Login' name='login'/>
-                    <FormInput className={styles.input} onChange={handleChange} placeholder='Password' name='pass'/>
+                    <FormInput className={styles.input} onChange={handleChange} placeholder='Password' name='pass' type='password'/>
                 </div>
                 <Link href='/'><a >
                     <button className={styles.button} onClick={
@@ -31,6 +31,7 @@ const Register = () => {
                                 event.preventDefault();
                             alert('Заполните поля');
                     }}>Continue</button>
+                    <Link href="/"><a> <button className={styles.button}>Home Page</button></a></Link>
                 </a></Link>
             </div>
         </div>

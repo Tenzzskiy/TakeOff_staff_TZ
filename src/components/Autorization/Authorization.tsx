@@ -62,7 +62,7 @@ const Authorization = () => {
                     <h1>Authorization</h1>
 
                     <FormInput onChange={handleChange} placeholder='Login' name='mail'/>
-                    <FormInput onChange={handleChange} placeholder='Password' name='pass'/>
+                    <FormInput onChange={handleChange} placeholder='Password' name='pass' type='password'/>
 
                     <div className={styles.buttonFlex}>
                         <Link href='application'><a className={checkLogin && checkPass ? styles.button_active : ''}>
